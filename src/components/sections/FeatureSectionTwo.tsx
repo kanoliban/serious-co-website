@@ -16,33 +16,33 @@ interface list {
 
 const LIST: Array<list> = [
   {
-    title: "Creative websites that make an impact.",
+    title: "Strategy that finds the message.",
     value: "1",
     summary:
-      "We design and develop custom websites that tell your story and drive results. From concept to launch, we handle every detail.",
+      "Analysis of product, market, and customers. We find the core message that sells. Not brand positioning. Sales positioning.",
     image: {
       src: "https://cdn.cosmos.so/a13978fa-5536-4e89-a976-5d24b239a389?format=jpeg",
-      alt: "Website design illustration",
+      alt: "Strategy analysis",
     },
   },
   {
-    title: "Advertisements that get noticed and remembered.",
+    title: "Creative that sells.",
     value: "2",
     summary:
-      "Our creative team crafts compelling campaigns across all channels. We turn simple ideas into memorable brand experiences.",
+      "The advertisement itself. Copy, visuals, formats. Work that actually runs. We measure results, not awards.",
     image: {
       src: "https://cdn.cosmos.so/31a4b92a-1b71-47ee-87e2-7594ad90e52a?format=jpeg",
-      alt: "Advertisement campaign dashboard",
+      alt: "Advertisement creative",
     },
   },
   {
-    title: "Business solutions tailored to your needs.",
+    title: "Optimization until it works.",
     value: "3",
     summary:
-      "We solve specific business problems with creative thinking and strategic execution. Every solution is crafted with care and precision.",
+      "Testing variations. Scaling what works. Killing what doesn't. We don't stop until the numbers prove it's working.",
     image: {
       src: "https://cdn.cosmos.so/65975927-a67d-4024-9f78-cc6a3f6c737f?format=jpeg",
-      alt: "Business solutions graphic",
+      alt: "Optimization process",
     },
   },
 ];
@@ -56,9 +56,9 @@ const FeatureSectionTwo = () => {
             A Very Serious Company
           </h1>
           <div className="text-lg max-w-xl leading-relaxed">
-            <p className="mb-2 text-white">A Very Serious Company is a creative agency.</p>
-            <p className="mb-2 text-white">We create serious, high-end websites, graphics, and videos using next-gen AI.</p>
-            <p className="mb-8 text-white">We take simple ideas seriously.</p>
+            <p className="mb-2 text-white">We create advertisements that increase sales.</p>
+            <p className="mb-2 text-white">That&apos;s it. One service, delivered well.</p>
+            <p className="mb-8 text-white">If it doesn&apos;t sell, it isn&apos;t creative.</p>
             <div className="flex flex-col sm:flex-row gap-3">
               <CTAButton
                 href="https://calendar.app.google/KKjjEffx5VEeuZ9Z7"

@@ -4,25 +4,25 @@ import CTAButton from "../ui/CTAButton";
 
 const DATA = [
   {
-    title: "Website Development",
+    title: "Strategy",
     description:
-      "We create beautiful, functional websites that help your business grow and connect with customers effectively.",
+      "Analysis of product, market, and customers. We find the core message that sells.",
     icon: "CircleHelp",
     image:
       "https://cdn.cosmos.so/410de9a7-1213-433a-93da-043b0e2e2a7b?format=jpeg",
   },
   {
-    title: "Creative Advertising",
+    title: "Creative",
     description:
-      "From concept to execution, we design advertisements that capture attention and drive results",
+      "The advertisement itself. Copy, visuals, formats. Work that actually runs.",
     icon: "Volume2",
     image:
       "https://cdn.cosmos.so/c32afa87-08ab-4e83-b768-7c1c7877e889?format=jpeg",
   },
   {
-    title: "Business Solutions",
+    title: "Measurement",
     description:
-      "We solve specific business problems with creative thinking and strategic implementation tailored to your needs",
+      "Tracking results. Attribution. Money spent, money returned. If it doesn't sell, it isn't creative.",
     icon: "Lightbulb",
     image:
       "https://cdn.cosmos.so/410de9a7-1213-433a-93da-043b0e2e2a7b?format=jpeg",
@@ -38,9 +38,9 @@ const FeatureSection = () => {
             A Very Serious Company
           </h1>
           <div className="max-w-[600px] space-y-2" style={{ letterSpacing: '-0.32px' }}>
-            <p>A Very Serious Company is a creative agency.</p>
-            <p>We create serious, high-end websites, graphics, and videos using next-gen AI.</p>
-            <p className="font-normal">We take simple ideas seriously.</p>
+            <p>We create advertisements that increase sales.</p>
+            <p>That&apos;s it. One service, delivered well.</p>
+            <p className="font-normal">If it doesn&apos;t sell, it isn&apos;t creative.</p>
           </div>
           <div className="mt-4 flex flex-col sm:flex-row gap-3">
             <CTAButton

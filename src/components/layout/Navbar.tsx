@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import {
@@ -212,6 +213,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const navRef = useRef<HTMLDivElement | null>(null);
+  const pathname = usePathname();
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -310,6 +312,8 @@ const Navbar = () => {
     { href: "/services", label: "Services" },
     { href: "/work", label: "Work" },
     { href: "/why-us", label: "Why Us" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -378,6 +382,16 @@ const Navbar = () => {
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
+
+              {/* FAQ Link - Desktop only, hidden on FAQ page */}
+              {pathname !== '/faq' && (
+                <a
+                  href="/faq"
+                  className="hidden lg:inline-flex absolute right-0 top-full mt-4 text-sm font-medium rounded-full border px-4 py-2 tracking-normal transition-all duration-200 whitespace-nowrap text-white border-white bg-transparent hover:bg-white/10"
+                >
+                  Questions? We have answers.
+                </a>
+              )}
 
               {/* Mobile Hamburger Button with Clean Design */}
               <div className="flex items-center gap-1 lg:hidden">
@@ -519,16 +533,18 @@ const Navbar = () => {
               ))}
             </nav>
 
-            {/* FAQ CTA on mobile */}
-            <div className="mt-8 flex justify-center lg:hidden">
-              <a
-                href="/faq"
-                className="text-sm font-medium rounded-full border px-4 py-2 tracking-normal transition-all duration-200 whitespace-nowrap text-white border-white bg-transparent hover:bg-white/10"
-                onClick={handleLinkClick}
-              >
-                Questions? We have answers.
-              </a>
-            </div>
+            {/* FAQ CTA on mobile - hidden on FAQ page */}
+            {pathname !== '/faq' && (
+              <div className="mt-8 flex justify-center lg:hidden">
+                <a
+                  href="/faq"
+                  className="text-sm font-medium rounded-full border px-4 py-2 tracking-normal transition-all duration-200 whitespace-nowrap text-white border-white bg-transparent hover:bg-white/10"
+                  onClick={handleLinkClick}
+                >
+                  Questions? We have answers.
+                </a>
+              </div>
+            )}
 
             {/* Clean Contact Information */}
             <div className="mt-auto pt-12 animate-contact-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>

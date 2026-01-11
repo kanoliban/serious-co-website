@@ -4,10 +4,10 @@ import CaseStudiesClient from "./CaseStudiesClient";
 
 export const metadata: Metadata = {
   title: "Our Work - A Very Serious Company",
-  description: "Here are some recent projects&nbsp;made real. From luxury spirits brands to healthcare services—simple ideas taken seriously.",
+  description: "Work that sells. Every project here solved a sales problem. We don't show work that looks good. We show work that worked.",
   openGraph: {
     title: "Our Work - A Very Serious Company",
-    description: "Here are some recent projects&nbsp;made real. From luxury spirits brands to healthcare services—simple ideas taken seriously.",
+    description: "Work that sells. Every project here solved a sales problem. We don't show work that looks good. We show work that worked.",
     images: [
       {
         url: "/a-very-serious-company.jpeg",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Our Work - A Very Serious Company",
-    description: "Explore our portfolio of successful projects. From luxury spirits brands to healthcare services, see how we take simple ideas seriously and deliver exceptional results.",
+    description: "Work that sells. Every project here solved a sales problem. We don't show work that looks good. We show work that worked.",
     images: ["/a-very-serious-company.jpeg"],
   },
 };
@@ -40,12 +40,12 @@ export default function OurWorkPage() {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             "name": "Our Work - A Very Serious Company",
-            "description": "Explore our portfolio of successful projects. From luxury spirits brands to healthcare services, see how we take simple ideas seriously and deliver exceptional results.",
+            "description": "Work that sells. Every project here solved a sales problem. We don't show work that looks good. We show work that worked.",
             "url": "https://avery-serious-company.com/work",
             "mainEntity": {
               "@type": "ItemList",
-              "name": "Creative Agency Portfolio",
-              "description": "Portfolio of web design and brand development projects",
+              "name": "Direct-Response Advertising Portfolio",
+              "description": "Work that solved sales problems. Every project here increased revenue for our clients.",
               "numberOfItems": 7,
               "itemListElement": [
                 {

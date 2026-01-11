@@ -51,5 +51,18 @@ export const teamMembers: TeamMember[] = [
     },
     bio: "Matthieu is responsible for visual execution. He translates strategy into visual assets, produces advertisement layouts, formats materials for channels, and maintains visual standards. Measured by craft and accuracy.",
     expertise: ["Visual Design", "Ad Production", "Layout", "Visual Standards"]
+  },
+  {
+    id: "4",
+    name: "Robera Miti",
+    title: "Developer",
+    description: "Code that works and scales",
+    slug: "robera-miti",
+    image: {
+      bw: "/team/robera-miti-bw.jpg",
+      color: "/team/robera-miti-color.jpg"
+    },
+    bio: "Robera writes code that works and scales. He believes in building things properly—no shortcuts, no technical debt. Every line serves a purpose.",
+    expertise: ["Web Development", "Technical Architecture", "Performance", "Code Quality"]
   }
 ];

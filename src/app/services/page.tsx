@@ -6,12 +6,14 @@ import {
   MegaphoneIcon,
   ChartBarIcon,
   ArrowPathIcon,
-  XMarkIcon
+  XMarkIcon,
+  ChatBubbleLeftRightIcon
 } from '@heroicons/react/24/outline';
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "The Service - A Very Serious Company",
-  description: "We create advertisements that increase sales. This is the entirety of what we offer. One service, delivered well. $5k-$8k/month, 90-day minimum.",
+  description: "We create advertisements that increase sales. This is the entirety of what we offer. One service, delivered well. Starting at $2,500/month, 90-day minimum.",
   openGraph: {
     title: "The Service - A Very Serious Company",
     description: "We create advertisements that increase sales. This is the entirety of what we offer. One service, delivered well.",
@@ -126,6 +128,19 @@ export default function OurServicesPage() {
                 </div>
               );
             })}
+
+            {/* Special Request CTA */}
+            <Link href="/contact" className="space-y-3 p-4 -m-4 rounded-xl border border-dashed border-white/20 hover:border-white/40 hover:bg-white/5 transition-all group">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                  <ChatBubbleLeftRightIcon className="w-4 h-4 text-white/60" />
+                </div>
+                <h3 className="text-lg font-medium text-white">Special Request?</h3>
+              </div>
+              <p className="text-sm leading-relaxed text-white/70">
+                Need something outside the standard scope? Let&apos;s talk about it.
+              </p>
+            </Link>
           </div>
         </div>
 
@@ -183,7 +198,7 @@ export default function OurServicesPage() {
             If it doesn&apos;t sell, it isn&apos;t creative.
           </p>
           <p className="text-base text-white/70">
-            $5,000–$8,000 per month. Media costs separate. 90-day minimum.
+            Starting at $2,500/month. Three tiers available. Media costs separate. 90-day minimum.
           </p>
         </div>
 

@@ -13,14 +13,13 @@ interface CaseStudyRelatedServicesProps {
   teamMembers?: RelatedServiceItem[];
 }
 
-// Default services mapping
+// Default services mapping - 5 components of our one service
 const servicesList: { [key: string]: string } = {
-  "Web Design": "/services/web-design",
-  "Web Development": "/services/web-development",
-  "Brand Strategy": "/services/brand-strategy",
-  "AI Training": "/services/ai-training",
-  "UX Design": "/services/ux-design",
-  "Content Strategy": "/services/content-strategy",
+  "Strategy": "/services",
+  "Creative": "/services",
+  "Placement": "/services",
+  "Measurement": "/services",
+  "Optimization": "/services",
 };
 
 export default function CaseStudyRelatedServices({
@@ -45,10 +44,10 @@ export default function CaseStudyRelatedServices({
             <div className="space-y-6">
               <div>
                 <p className="text-xs text-white/60 font-medium tracking-widest uppercase mb-4">
-                  Services Used
+                  What We Did
                 </p>
                 <h3 className="text-lg text-white font-light">
-                  Our Expertise Applied
+                  The work that sold.
                 </h3>
               </div>
 
@@ -71,10 +70,10 @@ export default function CaseStudyRelatedServices({
             <div className="space-y-6">
               <div>
                 <p className="text-xs text-white/60 font-medium tracking-widest uppercase mb-4">
-                  Team Members
+                  The Team
                 </p>
                 <h3 className="text-lg text-white font-light">
-                  Who Made It Happen
+                  Who did the work.
                 </h3>
               </div>
 

@@ -134,8 +134,8 @@ const ColumnTrack: React.FC<{
 };
 
 const HeroKineticMasonry: React.FC<Props> = ({
-  heading = "Your creative team's creative team",
-  subheading = "Scale your in-house team with premium web design, graphics, and video. Fast turnarounds, high craft, next-gen workflows.",
+  heading = "Advertisements that sell.",
+  subheading = "We create advertisements that increase sales. That's it. One service, delivered well. If it doesn't sell, it isn't creative.",
   ctaLabel = "Book a demo",
   onCtaClick,
   items,

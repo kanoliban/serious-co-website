@@ -16,7 +16,7 @@ export default function HealThriveRecoveryClient() {
   return (
     <HeroKineticMasonry
       heading="HealThrive Recovery"
-      subheading="Healthcare website design case study for addiction treatment center. See how we created a compassionate, trustworthy digital presence for HealThrive Recovery to help families find hope and healing."
+      subheading="Addiction treatment center needed families to call. We built a direct-response website that converts visitors into admissions inquiries. Families find help. The center fills beds."
       ctaLabel="View Case Study"
       onCtaClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       items={mediaItems}

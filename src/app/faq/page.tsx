@@ -4,7 +4,7 @@ import { CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export const metadata: Metadata = {
   title: "FAQ - A Very Serious Company",
-  description: "Straight answers about our direct-response advertising service. Pricing: $5k-$8k/month. 90-day minimum. We create advertisements that increase sales.",
+  description: "Straight answers about our direct-response advertising service. Pricing starts at $2,500/month. 90-day minimum. We create advertisements that increase sales.",
   openGraph: {
     title: "FAQ - A Very Serious Company",
     description: "Straight answers about our direct-response advertising service. Pricing, process, and who we work with.",
@@ -33,7 +33,18 @@ const faqs = [
   },
   {
     question: "How much does it cost?",
-    answer: "$5,000–$8,000 per month, depending on scope. Media costs are separate. 90-day minimum engagement. This is not negotiable."
+    answer: (
+      <div className="space-y-3">
+        <p>Three tiers based on scope:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li><strong>Starter ($2,500/mo):</strong> Single campaign, one channel, monthly optimization</li>
+          <li><strong>Growth ($5,000/mo):</strong> Full campaign suite, 2-3 channels, bi-weekly optimization</li>
+          <li><strong>Scale ($8,000+/mo):</strong> Multi-campaign strategy, all channels, weekly optimization</li>
+        </ul>
+        <p className="text-white/60">Media costs are separate. 90-day minimum engagement.</p>
+      </div>
+    ),
+    schemaAnswer: "Three tiers: Starter ($2,500/mo) for single campaign and one channel; Growth ($5,000/mo) for full campaign suite and 2-3 channels; Scale ($8,000+/mo) for multi-campaign strategy across all channels. Media costs are separate. 90-day minimum engagement."
   },
   {
     question: "Who should work with you?",
@@ -45,7 +56,15 @@ const faqs = [
   },
   {
     question: "What's your process?",
-    answer: "Week 1: Orientation. We collect everything we need about your product, market, and customers. Weeks 2-3: Creation. We write dozens of headlines to find the right one. Week 4: The advertisement goes live. Ongoing: Monthly cycle of analysis, optimization, and reporting."
+    answer: (
+      <ul className="list-disc list-inside space-y-2">
+        <li><strong>Week 1:</strong> Orientation. We collect everything we need about your product, market, and customers.</li>
+        <li><strong>Weeks 2-3:</strong> Creation. We write dozens of headlines to find the right one.</li>
+        <li><strong>Week 4:</strong> The advertisement goes live.</li>
+        <li><strong>Ongoing:</strong> Monthly cycle of analysis, optimization, and reporting.</li>
+      </ul>
+    ),
+    schemaAnswer: "Week 1: Orientation. We collect everything we need about your product, market, and customers. Weeks 2-3: Creation. We write dozens of headlines to find the right one. Week 4: The advertisement goes live. Ongoing: Monthly cycle of analysis, optimization, and reporting."
   },
   {
     question: "What makes you different?",
@@ -57,7 +76,7 @@ const whoShouldWorkWithUs = [
   "Proven product (customers exist and are satisfied)",
   "Healthy margins (economics support advertising)",
   "A sales problem, not a product problem",
-  "Budget to invest ($5k+ monthly in media)",
+  "Budget to invest ($2.5k+ monthly in media)",
   "Willingness to let us make creative decisions"
 ];
 
@@ -92,9 +111,9 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div key={index} className="space-y-3 pb-8 border-b border-white/10 last:border-b-0">
               <h3 className="text-xl sm:text-2xl font-light text-white">{faq.question}</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
+              <div className="text-lg text-white/80 leading-relaxed">
                 {faq.answer}
-              </p>
+              </div>
             </div>
           ))}
         </div>
@@ -146,21 +165,50 @@ export default function FAQ() {
             <div className="w-24 h-px bg-gradient-to-r from-white/50 to-transparent mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Starter Tier */}
             <div className="text-center p-6 rounded-lg bg-white/5 border border-white/10">
-              <div className="text-2xl font-light text-white mb-2">$5,000–$8,000</div>
-              <div className="text-sm text-white/70">Per month</div>
-              <p className="text-xs text-white/50 mt-2">Depending on scope</p>
+              <div className="text-sm font-medium text-white/60 uppercase tracking-wider mb-2">Starter</div>
+              <div className="text-3xl font-light text-white mb-1">$2,500</div>
+              <div className="text-sm text-white/70 mb-4">per month</div>
+              <ul className="text-xs text-white/60 space-y-1 text-left">
+                <li>• Single campaign</li>
+                <li>• One channel</li>
+                <li>• Monthly optimization</li>
+              </ul>
             </div>
-            <div className="text-center p-6 rounded-lg bg-white/5 border border-white/10">
-              <div className="text-2xl font-light text-white mb-2">Separate</div>
-              <div className="text-sm text-white/70">Media costs</div>
-              <p className="text-xs text-white/50 mt-2">You control your budget</p>
+            {/* Growth Tier */}
+            <div className="text-center p-6 rounded-lg bg-white/10 border border-white/20 ring-1 ring-white/10">
+              <div className="text-sm font-medium text-white uppercase tracking-wider mb-2">Growth</div>
+              <div className="text-3xl font-light text-white mb-1">$5,000</div>
+              <div className="text-sm text-white/70 mb-4">per month</div>
+              <ul className="text-xs text-white/60 space-y-1 text-left">
+                <li>• Full campaign suite</li>
+                <li>• 2-3 channels</li>
+                <li>• Bi-weekly optimization</li>
+              </ul>
             </div>
+            {/* Scale Tier */}
             <div className="text-center p-6 rounded-lg bg-white/5 border border-white/10">
-              <div className="text-2xl font-light text-white mb-2">90 days</div>
-              <div className="text-sm text-white/70">Minimum engagement</div>
-              <p className="text-xs text-white/50 mt-2">Advertising takes time to work</p>
+              <div className="text-sm font-medium text-white/60 uppercase tracking-wider mb-2">Scale</div>
+              <div className="text-3xl font-light text-white mb-1">$8,000+</div>
+              <div className="text-sm text-white/70 mb-4">per month</div>
+              <ul className="text-xs text-white/60 space-y-1 text-left">
+                <li>• Multi-campaign strategy</li>
+                <li>• All channels</li>
+                <li>• Weekly optimization</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex justify-center gap-8 text-sm text-white/60 mt-8">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-white/40"></span>
+              Media costs separate
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-white/40"></span>
+              90-day minimum
             </div>
           </div>
         </div>
@@ -189,7 +237,7 @@ export default function FAQ() {
               "name": faq.question,
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": faq.answer
+                "text": faq.schemaAnswer || faq.answer
               }
             }))
           })

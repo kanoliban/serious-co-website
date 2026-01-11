@@ -9,8 +9,8 @@ interface CaseStudyCTAProps {
 }
 
 export default function CaseStudyCTA({
-  title = "Ready to elevate your brand too?",
-  subtitle = "Let's discuss how we can help bring your vision to life."
+  title = "Ready to increase sales?",
+  subtitle = "Let's talk about advertising that actually works."
 }: CaseStudyCTAProps) {
   const calendarUrl = "https://calendar.app.google/KKjjEffx5VEeuZ9Z7";
   const phoneNumber = "952-215-7878";

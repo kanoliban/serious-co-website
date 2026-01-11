@@ -24,7 +24,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://avery-serious-company.com'),
   title: "A Very Serious Company - Direct-Response Advertising",
-  description: "We create advertisements that increase sales. That's it. One service, delivered well. $5k-$8k/month, 90-day minimum.",
+  description: "We create advertisements that increase sales. That's it. One service, delivered well. Starting at $2,500/month, 90-day minimum.",
   keywords: ["direct response advertising", "advertising agency", "sales advertising", "performance advertising", "David Ogilvy", "advertising that sells"],
   authors: [{ name: "A Very Serious Company" }],
   creator: "A Very Serious Company",
