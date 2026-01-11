@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 import CaseStudyPageLayout from "@/components/sections/CaseStudyPageLayout";
-import { caseStudies } from "@/content/caseStudies";
 
 export const metadata: Metadata = {
   title: "Jayded AF Case Study - A Very Serious Company",
-  description: "Premium gin martini brand website design case study. See how we created a sophisticated digital presence for Jayded AF using custom AI models and brand assets to match their craft cocktail experience.",
+  description: "Premium gin martini brand needed to convert visitors into customers. Direct-response landing pages increased online sales and drove traffic to retail partners.",
   openGraph: {
     title: "Jayded AF Case Study - A Very Serious Company",
-    description: "Premium gin martini brand website design case study. See how we created a sophisticated digital presence for Jayded AF using custom AI models and brand assets to match their craft cocktail experience.",
+    description: "Premium gin martini brand needed to convert visitors into customers. Direct-response landing pages increased online sales and drove traffic to retail partners.",
     images: [
       {
         url: "/jayded-af-project-video.mp4",
         width: 1200,
         height: 630,
-        alt: "Jayded AF Premium Gin Brand Website Design",
+        alt: "Jayded AF Premium Gin - Direct-Response Advertising",
       },
     ],
     type: "article",
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Jayded AF Case Study - A Very Serious Company",
-    description: "Premium gin martini brand website design case study. See how we created a sophisticated digital presence for Jayded AF using custom AI models and brand assets to match their craft cocktail experience.",
+    description: "Premium gin martini brand needed to convert visitors into customers. Direct-response landing pages increased online sales and drove traffic to retail partners.",
     images: ["/jayded-af-project-video.mp4"],
   },
 };
@@ -30,37 +29,37 @@ export default function JaydedAFCaseStudy() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": "Jayded AF Premium Gin Brand Website",
-    "description": "Premium gin martini brand website design case study. See how we created a sophisticated digital presence for Jayded AF using custom AI models and brand assets to match their craft cocktail experience.",
+    "name": "Jayded AF Premium Gin - Direct-Response Advertising",
+    "description": "Premium gin martini brand needed to convert visitors into customers. Direct-response landing pages increased online sales and drove traffic to retail partners.",
     "creator": {
       "@type": "Organization",
       "name": "A Very Serious Company",
       "url": "https://avery-serious-company.com"
     },
     "dateCreated": "2024",
-    "genre": "Web Design Case Study",
-    "keywords": ["premium gin", "luxury spirits", "brand website", "digital marketing", "craft cocktail", "brand development"],
+    "genre": "Direct-Response Advertising Case Study",
+    "keywords": ["direct-response advertising", "premium spirits", "conversion optimization", "sales advertising", "advertising that sells"],
     "about": {
       "@type": "Thing",
-      "name": "Premium Spirits Brand Development"
+      "name": "Direct-Response Advertising"
     },
     "workExample": {
       "@type": "MediaObject",
       "contentUrl": "https://avery-serious-company.com/jayded-af-project-video.mp4",
       "encodingFormat": "video/mp4"
     },
-    "url": "https://avery-serious-company.com/case-studies/jayded-af",
+    "url": "https://avery-serious-company.com/work/jayded-af",
     "image": "https://avery-serious-company.com/jayded-af-project-video.mp4",
     "isPartOf": {
       "@type": "CollectionPage",
-      "name": "Case Studies",
-      "url": "https://avery-serious-company.com/case-studies"
+      "name": "Our Work",
+      "url": "https://avery-serious-company.com/work"
     }
   };
 
   return (
-    <CaseStudyPageLayout 
-      slug="jayded-af" 
+    <CaseStudyPageLayout
+      slug="jayded-af"
       structuredData={structuredData}
     >
       {/* Project Media */}

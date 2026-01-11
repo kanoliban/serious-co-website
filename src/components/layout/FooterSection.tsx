@@ -31,11 +31,12 @@ export default function FooterSection() {
 
           <div className="max-w-3xl mx-auto mb-8">
             <p className="text-lg leading-relaxed mb-4 text-white">
-              A Very Serious Company is a creative agency.<br />
-              We create serious, high-end websites, graphics, and videos using next-gen AI.
+              We create advertisements that sell things.<br />
+              We measure whether they work.<br />
+              We improve them until they do.
             </p>
             <p className="text-lg font-normal mb-4 text-white">
-              We take simple ideas seriously.
+              If it doesn&apos;t sell, it isn&apos;t creative.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">

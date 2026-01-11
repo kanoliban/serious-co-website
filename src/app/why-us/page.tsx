@@ -29,42 +29,42 @@ export default function WhyUsPage() {
 
   // StoryBrand: THE CUSTOMER'S PROBLEM
   const problemStats = [
-    { 
-      label: "Agencies overcomplicate simple projects", 
-      value: 87, 
+    {
+      label: "Agencies optimize for awards, not sales",
+      value: 92,
       icon: Target,
-      description: "Adding unnecessary steps and stakeholders"
+      description: "Building portfolios of 'brave' work that wins trophies"
     },
-    { 
-      label: "Deliverables don&apos;t solve the actual problem", 
-      value: 72,
+    {
+      label: "Creative that entertains but doesn't sell",
+      value: 78,
       icon: X,
-      description: "Looking good in decks but failing in reality"
+      description: "Looking good in case studies but failing to move product"
     },
-    { 
-      label: "Timeline stretches, budget balloons", 
-      value: 91,
+    {
+      label: "No accountability for results",
+      value: 85,
       icon: Clock,
-      description: "Process for the sake of process"
+      description: "No ROI tracking, no sales attribution, no transparency"
     },
   ];
 
   // StoryBrand: THE GUIDE (YOU) HAS EMPATHY & AUTHORITY
   const authorityMarkers = [
     {
-      metric: "48hr",
-      label: "Average turnaround for clear briefs",
-      detail: "Not because we rush. Because we don&apos;t waste time."
+      metric: "2:1",
+      label: "Minimum acceptable return",
+      detail: "Below this, we kill the campaign. No excuses, no spin."
     },
     {
-      metric: "Zero",
-      label: "Proprietary frameworks or BS processes",
-      detail: "Just clear thinking, applied consistently."
+      metric: "4:1",
+      label: "Target return on ad spend",
+      detail: "What we aim for on every campaign we run."
     },
     {
-      metric: "100%",
-      label: "Projects start with understanding, not templates",
-      detail: "Your idea gets the seriousness it deserves."
+      metric: "90 days",
+      label: "Before any campaign is judged",
+      detail: "Advertising takes time. We measure what matters."
     },
   ];
 
@@ -72,54 +72,54 @@ export default function WhyUsPage() {
   const plan = [
     {
       step: "01",
-      title: "You tell us the problem",
-      description: "Not what you want us to build. What you&apos;re trying to solve. We ask the right questions until we understand what actually matters.",
-      outcome: "Clarity on what success looks like"
+      title: "We study your product and market",
+      description: "Week 1 is orientation. We collect everything: your customers, competitors, margins, what's worked before, what hasn't. We find the message that makes people buy.",
+      outcome: "The core message that sells"
     },
     {
       step: "02",
-      title: "We figure out what matters",
-      description: "No frameworks. No templates. Just clear thinking about your specific situation. Then we tell you exactly what we&apos;ll build and why.",
-      outcome: "A plan that actually makes sense"
+      title: "We create the advertisement",
+      description: "Weeks 2-3. We write dozens of headlines to find the right one. We build the creative. Copy, visuals, formats. The work that will actually run.",
+      outcome: "An advertisement ready to sell"
     },
     {
       step: "03",
-      title: "We build it right",
-      description: "Fast execution. High craft. Direct communication. You work with the people actually creating. No account managers. No layers.",
-      outcome: "Something that works"
+      title: "We run it, measure it, improve it",
+      description: "Week 4 and ongoing. The ad goes live. We track results. Money spent, money returned. Every month: analysis, optimization, reporting. The cycle repeats.",
+      outcome: "Sales you can measure"
     },
   ];
 
   // StoryBrand: THE STAKES (What you avoid)
   const stakes = [
     {
-      bad: "Months of meetings",
-      good: "Clear answers in days",
-      impact: "Time saved"
+      bad: "Award-winning ads that don't sell",
+      good: "Ads built to generate revenue",
+      impact: "Measurable sales"
     },
     {
-      bad: "Layers of approval",
-      good: "Direct access to creators",
-      impact: "Better decisions"
+      bad: "No idea what's working",
+      good: "Monthly reports: money spent, money returned",
+      impact: "Complete transparency"
     },
     {
-      bad: "Generic templates",
-      good: "Custom solutions",
-      impact: "Actual differentiation"
+      bad: "Paying for creativity theater",
+      good: "Paying for results",
+      impact: "Real accountability"
     },
     {
-      bad: "Process for process sake",
-      good: "Work that matters",
-      impact: "Real results"
+      bad: "Agencies optimizing for their portfolio",
+      good: "Agency optimizing for your revenue",
+      impact: "Aligned incentives"
     },
   ];
 
   // StoryBrand: THE SUCCESS (What winning looks like)
   const successOutcomes = [
-    { icon: Zap, title: "Fast", desc: "Days, not months" },
-    { icon: Target, title: "Precise", desc: "Solves your actual problem" },
-    { icon: Shield, title: "Quality", desc: "Built right the first time" },
-    { icon: TrendingUp, title: "Effective", desc: "Works in the real world" },
+    { icon: TrendingUp, title: "Sales", desc: "Revenue you can measure" },
+    { icon: Target, title: "Clarity", desc: "Know what's working" },
+    { icon: Shield, title: "Accountability", desc: "Real ROI, not vanity metrics" },
+    { icon: Zap, title: "Efficiency", desc: "Ad spend that produces returns" },
   ];
 
   return (
@@ -142,19 +142,19 @@ export default function WhyUsPage() {
                 transition={{ delay: 0.2 }}
               >
                 <h1 className="text-xs sm:text-sm font-medium tracking-widest uppercase text-white/60 mb-4">
-                  The agency problem
+                  The advertising problem
                 </h1>
               </motion.div>
 
-              <motion.h1 
+              <motion.h1
                 className="text-5xl md:text-7xl lg:text-8xl font-light leading-[1.1] tracking-tight"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
-                You have a problem.
+                The industry optimizes for creativity.
                 <br />
-                <span className="text-white/40">Most agencies make it worse.</span>
+                <span className="text-white/40">We optimize for sales.</span>
               </motion.h1>
 
               <motion.p
@@ -163,7 +163,7 @@ export default function WhyUsPage() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                They add process when you need speed. Templates when you need custom. Layers when you need direct answers.
+                While every other agency competes to be the most creative, we compete to be the most effective. The arbitrage works because competence has become scarce.
               </motion.p>
             </div>
 
@@ -239,15 +239,15 @@ export default function WhyUsPage() {
                 {/* Left: Empathy Statement */}
                 <div className="lg:col-span-2">
                   <h1 className="text-xs sm:text-sm font-medium tracking-widest uppercase text-white/60 mb-6">
-                    We understand
+                    The arbitrage
                   </h1>
                   <h2 className="text-4xl md:text-6xl font-light leading-tight mb-6">
-                    We&apos;ve seen this before.
+                    The industry became unserious.
                     <br />
-                    <span className="text-white/40">It doesn&apos;t have to be this way.</span>
+                    <span className="text-white/40">We are serious.</span>
                   </h2>
                   <p className="text-xl text-white/70 leading-relaxed">
-                    You don&apos;t need another agency with a proprietary process. You need someone who understands what you&apos;re trying to solve, then solves it.
+                    In an industry obsessed with creativity awards, simply doing the job well becomes a radical act. We create advertisements that sell things. Then we measure whether they work.
                   </p>
                 </div>
 
@@ -594,10 +594,10 @@ export default function WhyUsPage() {
                   What you get
                 </h1>
                 <h2 className="text-4xl md:text-6xl font-light leading-tight mb-6">
-                  Work that actually works.
+                  Advertising that sells.
                 </h2>
                 <p className="text-xl text-white/60">
-                  Not decks. Not deliverables. Not process documents. Real work that solves your real problem.
+                  Not brand decks. Not awareness campaigns. Not creative concepts. Advertisements that generate measurable revenue.
                 </p>
               </div>
 
@@ -645,12 +645,12 @@ export default function WhyUsPage() {
             >
               <div className="space-y-6">
                 <h2 className="text-5xl md:text-7xl font-light leading-tight">
-                  Ready to work on something
+                  Ready to sell
                   <br />
-                  <em className="text-white/60">serious?</em>
+                  <em className="text-white/60">something?</em>
                 </h2>
                 <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                  Tell us what you&apos;re trying to solve. We&apos;ll tell you if we can help.
+                  Tell us what you sell. We&apos;ll tell you if we can help you sell more of it.
                 </p>
               </div>
 
@@ -676,7 +676,7 @@ export default function WhyUsPage() {
             </div>
 
               <p className="text-sm text-white/40">
-                No long forms. No meetings about meetings. Just a conversation.
+                $5,000–$8,000/month. Media costs separate. 90-day minimum.
               </p>
             </motion.div>
           </div>

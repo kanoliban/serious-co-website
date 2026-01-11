@@ -4,13 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import ShootingStarBackground from "../blocks/ShootingStarBackground";
 import PageFooter from "./PageFooter";
-import ChatGPTForSeniorsButton from "../ui/ChatGPTForSeniorsButton";
 
 const HomePageLayout = () => {
   return (
     <section className="relative overflow-hidden bg-[#0B3D91]" style={{ backgroundColor: 'var(--brand-blue, #0B3D91)' }}>
       <ShootingStarBackground numberOfStars={100} />
-
 
       <div className="relative z-20 max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 pt-[var(--nav-h,64px)] min-h-[calc(100svh-var(--nav-h,64px))] grid grid-rows-[1fr_auto] grid-areas-[title_footer]">
         {/* Title Area */}
@@ -54,18 +52,6 @@ const HomePageLayout = () => {
           }}
         >
           <PageFooter />
-        </motion.div>
-
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{
-            duration: 0.6,
-            ease: [0.25, 0.46, 0.45, 0.94],
-            delay: 1.4
-          }}
-        >
-          <ChatGPTForSeniorsButton variant="floating-top-right" />
         </motion.div>
       </div>
     </section>

@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 import CaseStudyPageLayout from "@/components/sections/CaseStudyPageLayout";
-import { caseStudies } from "@/content/caseStudies";
 
 export const metadata: Metadata = {
   title: "HealThrive Recovery Case Study - A Very Serious Company",
-  description: "Healthcare website design case study for addiction treatment center. See how we created a compassionate, trustworthy digital presence for HealThrive Recovery to help families find hope and healing.",
+  description: "Addiction treatment center needed families to call. Direct-response website converts visitors into admissions inquiries. Families find help. The center fills beds.",
   openGraph: {
     title: "HealThrive Recovery Case Study - A Very Serious Company",
-    description: "Healthcare website design case study for addiction treatment center. See how we created a compassionate, trustworthy digital presence for HealThrive Recovery to help families find hope and healing.",
+    description: "Addiction treatment center needed families to call. Direct-response website converts visitors into admissions inquiries. Families find help. The center fills beds.",
     images: [
       {
         url: "/healthrive-recovery-project.png",
         width: 1200,
         height: 630,
-        alt: "HealThrive Recovery Healthcare Website Design",
+        alt: "HealThrive Recovery - Direct-Response Advertising",
       },
     ],
     type: "article",
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "HealThrive Recovery Case Study - A Very Serious Company",
-    description: "Healthcare website design case study for addiction treatment center. See how we created a compassionate, trustworthy digital presence for HealThrive Recovery to help families find hope and healing.",
+    description: "Addiction treatment center needed families to call. Direct-response website converts visitors into admissions inquiries. Families find help. The center fills beds.",
     images: ["/healthrive-recovery-project.png"],
   },
 };
@@ -30,37 +29,37 @@ export default function HealThriveRecoveryCaseStudy() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": "HealThrive Recovery Healthcare Website",
-    "description": "Healthcare website design case study for addiction treatment center. See how we created a compassionate, trustworthy digital presence for HealThrive Recovery to help families find hope and healing.",
+    "name": "HealThrive Recovery - Direct-Response Advertising",
+    "description": "Addiction treatment center needed families to call. Direct-response website converts visitors into admissions inquiries. Families find help. The center fills beds.",
     "creator": {
       "@type": "Organization",
       "name": "A Very Serious Company",
       "url": "https://avery-serious-company.com"
     },
     "dateCreated": "2024",
-    "genre": "Healthcare Web Design Case Study",
-    "keywords": ["healthcare website", "addiction treatment", "mental health", "digital healthcare", "compassionate design", "healthcare marketing"],
+    "genre": "Direct-Response Advertising Case Study",
+    "keywords": ["direct-response advertising", "healthcare marketing", "conversion optimization", "sales advertising", "advertising that sells"],
     "about": {
       "@type": "Thing",
-      "name": "Healthcare Digital Marketing"
+      "name": "Direct-Response Advertising"
     },
     "workExample": {
       "@type": "MediaObject",
       "contentUrl": "https://avery-serious-company.com/healthrive-recovery-project.png",
       "encodingFormat": "image/png"
     },
-    "url": "https://avery-serious-company.com/case-studies/healthrive-recovery",
+    "url": "https://avery-serious-company.com/work/healthrive-recovery",
     "image": "https://avery-serious-company.com/healthrive-recovery-project.png",
     "isPartOf": {
       "@type": "CollectionPage",
-      "name": "Case Studies",
-      "url": "https://avery-serious-company.com/case-studies"
+      "name": "Our Work",
+      "url": "https://avery-serious-company.com/work"
     }
   };
 
   return (
-    <CaseStudyPageLayout 
-      slug="healthrive-recovery" 
+    <CaseStudyPageLayout
+      slug="healthrive-recovery"
       structuredData={structuredData}
     >
       {/* Project Media */}

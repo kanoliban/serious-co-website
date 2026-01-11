@@ -4,8 +4,8 @@ export interface TeamMember {
   title: string;
   description: string;
   image: {
-    bw: string; // Black and white image
-    color: string; // Color image
+    bw: string;
+    color: string;
   };
   slug: string;
   bio: string;
@@ -15,54 +15,41 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     id: "1",
-    name: "Amanti Melkamu",
-    title: "Designer",
-    description: "Crafts thoughtful, elegant visual experiences",
-    slug: "amanti-melkamu",
-    image: {
-      bw: "/team/amanti-melkamu-bw.jpg",
-      color: "/team/amanti-melkamu-color.jpg"
-    },
-    bio: "Amanti brings clarity to visual communication. With a background in design systems and brand identity, he believes the best design disappears—allowing the idea to shine through.",
-    expertise: ["Visual Design", "Brand Identity", "Design Systems", "UI/UX"]
-  },
-  {
-    id: "2",
     name: "Liban Kano",
-    title: "Copywriter",
-    description: "Distills complex ideas into clear, compelling words",
+    title: "Principal",
+    description: "Client relationships, strategy, and business development",
     slug: "liban-kano",
     image: {
       bw: "/team/liban-kano-bw.jpg",
       color: "/team/liban-kano-color.jpg"
     },
-    bio: "Liban writes the way we think: directly, clearly, without fluff. He knows that great copy doesn't announce itself—it just says exactly what needs to be said.",
-    expertise: ["Brand Voice", "Web Copy", "Storytelling", "Headlines"]
+    bio: "Liban is responsible for client relationships, strategy, and business development. Final authority on all decisions. He believes that the purpose of advertising is not to entertain, but to sell.",
+    expertise: ["Strategy", "Client Relationships", "Business Development", "Advertising"]
+  },
+  {
+    id: "2",
+    name: "Amanti Melkamu",
+    title: "Client Development",
+    description: "Prospect identification, outreach, and qualification",
+    slug: "amanti-melkamu",
+    image: {
+      bw: "/team/amanti-melkamu-bw.jpg",
+      color: "/team/amanti-melkamu-color.jpg"
+    },
+    bio: "Amanti is responsible for prospect identification and outreach. He finds potential clients, makes initial contact, qualifies prospects, and schedules discovery calls. Measured by qualified conversations generated.",
+    expertise: ["Client Development", "Prospect Qualification", "Outreach", "Discovery"]
   },
   {
     id: "3",
-    name: "Robera Miti",
-    title: "Developer",
-    description: "Builds reliable, thoughtful digital experiences",
-    slug: "robera-miti",
+    name: "Matthieu",
+    title: "Design",
+    description: "Visual execution and production",
+    slug: "matthieu",
     image: {
-      bw: "/team/robera-miti-bw.jpg",
-      color: "/team/robera-miti-color.jpg"
+      bw: "/team/matthieu-bw.jpg",
+      color: "/team/matthieu-color.jpg"
     },
-    bio: "Robera writes code that works and scales. He believes in building things properly—no shortcuts, no technical debt. Every line serves a purpose.",
-    expertise: ["Full Stack Development", "React", "Performance", "Infrastructure"]
-  },
-  {
-    id: "4",
-    name: "Serious AI Agent",
-    title: "Creative Strategist",
-    description: "Synthesizes ideas and identifies the path forward",
-    slug: "serious-ai-agent",
-    image: {
-      bw: "/team/serious-ai-agent-bw.jpg",
-      color: "/team/serious-ai-agent-color.jpg"
-    },
-    bio: "Our AI agent brings tireless clarity to every project. It synthesizes complex information, identifies patterns, and ensures our work stays grounded in reality. Never sleeps, always serious.",
-    expertise: ["Strategic Thinking", "Analysis", "Ideation", "Execution"]
+    bio: "Matthieu is responsible for visual execution. He translates strategy into visual assets, produces advertisement layouts, formats materials for channels, and maintains visual standards. Measured by craft and accuracy.",
+    expertise: ["Visual Design", "Ad Production", "Layout", "Visual Standards"]
   }
 ];

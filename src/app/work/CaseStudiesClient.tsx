@@ -248,9 +248,9 @@ export default function CaseStudiesClient() {
   const caseStudies: CaseStudy[] = [
     {
       title: "Jayded AF",
-      description: "Jayded AF is a premium gin martini brand that needed a sophisticated digital presence to match their craft cocktail experience. We created a sleek, modern website that captures the essence of their premium spirits and appeals to their target demographic of cocktail enthusiasts and luxury consumers.",
+      description: "Premium gin martini brand needed to convert website visitors into customers. Direct-response landing pages with clear purchase paths increased online sales and drove traffic to retail partners.",
       href: "/work/jayded-af",
-      category: "Luxury Consumer Brand",
+      category: "Premium Spirits",
       workType: "Food and Beverage",
       gradient: "from-purple-500/20 to-pink-500/20",
       accent: "text-purple-300",
@@ -259,9 +259,9 @@ export default function CaseStudiesClient() {
     },
     {
       title: "HealThrive Recovery",
-      description: "HealThrive Recovery is an addiction treatment center requiring a compassionate and trustworthy digital presence to help families find hope and healing. We developed a warm, professional website that balances sensitivity with accessibility, making it easy for those seeking help to find the resources they need.",
+      description: "Addiction treatment center needed families to call. We built a direct-response website that converts visitors into admissions inquiries. Families find help. The center fills beds.",
       href: "/work/healthrive-recovery",
-      category: "Healthcare Services",
+      category: "Healthcare",
       workType: "Health and Wellness",
       gradient: "from-blue-500/20 to-cyan-500/20",
       accent: "text-cyan-300",
@@ -270,9 +270,9 @@ export default function CaseStudiesClient() {
     },
     {
       title: "Zachary Construction Group",
-      description: "Coming soon - A comprehensive digital presence for this construction company.",
+      description: "Coming soon — Construction company generating qualified leads through direct-response advertising.",
       href: "#",
-      category: "Construction Services",
+      category: "Construction",
       workType: "Construction",
       gradient: "from-orange-500/20 to-yellow-500/20",
       accent: "text-orange-300",
@@ -281,7 +281,7 @@ export default function CaseStudiesClient() {
     },
     {
       title: "Pet Love Cremation & Memorial",
-      description: "Coming soon - A compassionate digital platform for pet memorial services.",
+      description: "Coming soon — Pet memorial service converting grief into inquiries with dignity.",
       href: "#",
       category: "Pet Services",
       workType: "Pet Services",
@@ -292,7 +292,7 @@ export default function CaseStudiesClient() {
     },
     {
       title: "Beka Wealth Advisors",
-      description: "Coming soon - A professional financial advisory platform.",
+      description: "Coming soon — Financial advisory firm acquiring high-net-worth clients through targeted advertising.",
       href: "#",
       category: "Financial Services",
       workType: "Finance",
@@ -303,7 +303,7 @@ export default function CaseStudiesClient() {
     },
     {
       title: "Pacific Life",
-      description: "Coming soon - A comprehensive digital platform for this financial services company.",
+      description: "Coming soon — Insurance company driving policy inquiries through direct-response campaigns.",
       href: "#",
       category: "Financial Services",
       workType: "Finance",
@@ -314,9 +314,9 @@ export default function CaseStudiesClient() {
     },
     {
       title: "WEOY",
-      description: "Coming soon - A digital experience for this innovative platform.",
+      description: "Coming soon — Technology platform converting visitors into users.",
       href: "#",
-      category: "Technology Platform",
+      category: "Technology",
       workType: "Technology",
       gradient: "from-violet-500/20 to-purple-500/20",
       accent: "text-violet-300",
@@ -325,7 +325,7 @@ export default function CaseStudiesClient() {
     },
     {
       title: "Zachary Group",
-      description: "Coming soon - A comprehensive digital presence for this group company.",
+      description: "Coming soon — Business services group generating qualified B2B leads.",
       href: "#",
       category: "Business Services",
       workType: "Business",
@@ -336,9 +336,9 @@ export default function CaseStudiesClient() {
     },
     {
       title: "The Last Paradox",
-      description: "Coming soon - A digital experience for this Warner Bros. Music Group artist's upcoming album release.",
+      description: "Coming soon — Album release campaign driving streams and merchandise sales.",
       href: "#",
-      category: "Music & Entertainment",
+      category: "Entertainment",
       workType: "Entertainment",
       gradient: "from-pink-500/20 to-purple-500/20",
       accent: "text-pink-300",
@@ -355,10 +355,10 @@ export default function CaseStudiesClient() {
           Our Work
         </h1>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light leading-tight text-white">
-          Simple ideas executed <em>seriously</em>.<br />Real brands, real results.
+          Work that sells.
         </h2>
         <p className="text-lg sm:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-          We take our clients&apos; visions seriously and deliver work that inspires.<span className="hidden md:inline"> From luxury consumer brands to healthcare services</span><span className="md:hidden"><br />From luxury consumer brands to healthcare services</span>, we bring thoughtful strategy and craft to every project.
+          Every project here solved a sales problem. We don&apos;t show work that looks good. We show work that worked.
         </p>
       </div>
 

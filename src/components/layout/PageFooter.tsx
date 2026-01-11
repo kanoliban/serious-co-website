@@ -12,11 +12,11 @@ export default function PageFooter({ className = "" }: PageFooterProps) {
     <div className={`relative z-10 ${className} flex justify-start lg:justify-end`}>
       <div className="flex flex-col items-start lg:items-end max-w-md w-full lg:w-auto">
         <h2 className="text-left lg:text-right font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tighter mb-6 leading-tight text-white w-[500px]">
-          We&nbsp;take simple&nbsp;ideas <em>seriously.</em>
+          We create advertisements that <em>sell.</em>
         </h2>
         <div className="flex flex-col sm:flex-row gap-3 self-start lg:self-end mt-2 mb-4">
           <p className="text-xs sm:text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 text-left lg:text-right">
-            AVSC is a modern creative studio built for the AI era.
+            That&apos;s the only thing we do.
           </p>
         </div>
         <div className="flex flex-row max-[400px]:flex-col gap-3 self-start lg:self-end mt-2">
